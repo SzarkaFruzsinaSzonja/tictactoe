@@ -134,6 +134,7 @@ const winCheck = () => {
 };
 
 
+
 cellsArray.map((item, index) => {
     item.addEventListener("click", function () {
         if (item.textContent !== "X" && item.textContent !== "0") {
