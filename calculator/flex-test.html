@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex test page</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }
+
+        button {
+            display: block;
+            height: 2rem;
+            line-height: 2rem;
+            margin: .25rem;
+        }
+
+        .tall {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+        </div>
+        <div class="column">
+            <button>E</button>
+            <button class="tall">F</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
